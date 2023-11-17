@@ -1,8 +1,19 @@
 [package]
-name = "REST_API_server"
+name = "rest_api_server"
 version = "0.1.0"
 edition = "2021"
+
+# Not needed, but in for completeness
+[[bin]]
+name = "rest_api_server"
+path = "src/main.rs"
+
+# Not needed, but in for completeness
+[lib]
+name = "rest_api_server"
+path = "src/lib.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix-web = "4"
