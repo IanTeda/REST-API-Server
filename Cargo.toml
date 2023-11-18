@@ -15,7 +15,9 @@ path = "src/lib.rs"
 
 [dependencies]
 actix-web = "4"
+config = { version = "0.13", default-features = false, features = ["yaml"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0.192", features = ["derive"]} # "derive" feature is not enabled by default, so we need to declare
 
 [dev-dependencies]
 actix-rt = "2.9" # testing equivalent of    lactic::main
