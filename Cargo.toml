@@ -2,7 +2,7 @@
 name = "rest_api_server"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Ian Teda <ian@teda.id.au"]
 # Not needed, but in for completeness
 [[bin]]
 name = "rest_api_server"
@@ -13,7 +13,10 @@ path = "src/main.rs"
 name = "rest_api_server"
 path = "src/lib.rs"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 actix-web = "4"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+[dev-dependencies]
+actix-rt = "2.9" # testing equivalent of    lactic::main
+reqwest = "0.11" # http client for rust, used in testing

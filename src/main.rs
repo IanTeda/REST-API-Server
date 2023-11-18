@@ -1,4 +1,4 @@
-use rest_api_server::server::run;
+use rest_api_server::startup::run;
 use std::net::TcpListener;
 
 #[actix_web::main]
