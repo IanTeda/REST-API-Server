@@ -1,0 +1,9 @@
+site_name: REST API Server
+site_url: https://ianteda.github.io/REST-API-Server
+theme:
+  name: 'windmill'
+nav:
+  - Home: README.md
+  - About: about.md
+  - MkDocs: mkdocs.md
+  - References: references.md
