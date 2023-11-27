@@ -2,7 +2,7 @@ use rest_api_server::configuration::get_configuration;
 use rest_api_server::startup::run;
 use rest_api_server::telemetry;
 use std::net::TcpListener;
-use tracing::{error, info, Level};
+// use tracing::{error, info, Level};
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {

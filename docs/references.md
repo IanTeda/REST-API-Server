@@ -9,6 +9,7 @@
 
 ## Document Generation
 
+* [Rust Development: Creating a REST API with Actix Web for Beginners](https://blog.ediri.io/rust-development-creating-a-rest-api-with-actix-web-for-beginners)
 * [MkDocs](https://www.mkdocs.org/)
 * [zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
 * [Creating a Web Service in Rust with Actix-Web, SQLx, and PostgreSQL](https://hstreet.tech/creating-a-web-service-in-rust-with-actix-web-sqlx-and-postgresql-805c9d1aae35)
