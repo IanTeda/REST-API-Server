@@ -6,4 +6,5 @@ nav:
   - Home: README.md
   - About: about.md
   - MkDocs: mkdocs.md
+  - Swagger: swagger.md
   - References: references.md
