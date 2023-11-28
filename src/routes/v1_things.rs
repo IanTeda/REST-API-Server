@@ -9,11 +9,19 @@
 // method_route!(delete, DELETE);
 // method_route!(head, HEAD);
 // method_route!(trace, TRACE);
-use actix_web::{web, Error, HttpResponse};
+use actix_web::{delete, get, patch, post, put, web, Error, HttpResponse};
 use futures::{future::ok, stream::once};
+use serde::Deserialize;
+
+#[derive(Deserialize, Debug)]
+pub struct Info {
+    thing_id: u32,
+    query: String,
+}
 
 #[tracing::instrument(name = "Get tihngs")]
-pub async fn get_things() -> HttpResponse {
+#[get("")]
+pub async fn things_get() -> HttpResponse {
     let body = once(ok::<_, Error>(web::Bytes::from_static(b"GET: Things")));
 
     HttpResponse::Ok()
@@ -22,7 +30,8 @@ pub async fn get_things() -> HttpResponse {
 }
 
 #[tracing::instrument(name = "Put tihngs")]
-pub async fn post_things() -> HttpResponse {
+#[post("")]
+pub async fn things_post() -> HttpResponse {
     let body = once(ok::<_, Error>(web::Bytes::from_static(b"POST: Things")));
 
     HttpResponse::Ok()
@@ -31,7 +40,8 @@ pub async fn post_things() -> HttpResponse {
 }
 
 #[tracing::instrument(name = "Put tihngs")]
-pub async fn put_things() -> HttpResponse {
+#[put("")]
+pub async fn things_put() -> HttpResponse {
     let body = once(ok::<_, Error>(web::Bytes::from_static(b"PUT: Things")));
 
     HttpResponse::Ok()
@@ -40,7 +50,8 @@ pub async fn put_things() -> HttpResponse {
 }
 
 #[tracing::instrument(name = "Patch tihngs")]
-pub async fn patch_things() -> HttpResponse {
+#[patch("")]
+pub async fn things_patch() -> HttpResponse {
     let body = once(ok::<_, Error>(web::Bytes::from_static(b"PATCH: Things")));
 
     HttpResponse::Ok()
@@ -49,7 +60,8 @@ pub async fn patch_things() -> HttpResponse {
 }
 
 #[tracing::instrument(name = "Delete tihngs")]
-pub async fn delete_things() -> HttpResponse {
+#[delete{""}]
+pub async fn things_delete() -> HttpResponse {
     let body = once(ok::<_, Error>(web::Bytes::from_static(b"DELETE: Things")));
 
     HttpResponse::Ok()
