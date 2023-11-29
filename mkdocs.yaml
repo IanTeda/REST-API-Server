@@ -5,6 +5,7 @@ theme:
 nav:
   - Home: README.md
   - About: about.md
+  - API Reference: api.md
   - MkDocs: mkdocs.md
   - Swagger: swagger.md
   - References: references.md
