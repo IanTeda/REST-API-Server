@@ -1,10 +1,21 @@
 site_name: REST API Server
 site_url: https://ianteda.github.io/REST-API-Server
 theme:
-  name: 'windmill'
+  name: 'material'
 nav:
   - Home: README.md
   - About: about.md
   - MkDocs: mkdocs.md
   - Swagger: swagger.md
   - References: references.md
+plugins:
+  - search
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - css/neoteroi-mkdocsoad.css
