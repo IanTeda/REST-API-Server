@@ -6,11 +6,11 @@ To set up MkDocs in our Project we need to:
 
 1. Configure MkDocs 
 2. Documentation files
-3. Github workflow
-4. Github workflow permissions
-5. Commit and push to Github
-6. Confirm the action ran on Github 
-7. Set the Github Repository to use Github Pages
+3. Github Workflow
+4. Github Workflow Permissions
+5. Add Commit and Push to Github
+6. Confirm Github Action
+7. Set Repository to use Github Pages
 
 ## 1. Configure MkDocs
 
@@ -111,7 +111,7 @@ Then allow Read and write permissions
 
 ![Allow read and write permissions for actions](./images/screenshot-github-actions.png "Allow actions read and write permissions for repository")
 
-## 5. Commit and Push to Github 
+## 5. Add Commit and Push to Github 
 
 Now we need to add and commit the repository before pushing to Github
 
@@ -132,15 +132,13 @@ git push
 Now that we have pushed to Github lets confirm the workflow executed ok, by going to Actions > All Workflows. 
 
 
-## 7. Set the Github Repository to use Github Pages 
+## 7. Set Repository to use Github Pages 
 
 We set up pages by going to the Repository Settings > Pages > Build and deployment > Branch.
 
 Then set the branch to `gh-pages`.
 
 ![Build and deploy setting](./images/screenshot-githubs-pages.png "Set the branch for Github pages to use")
-
-### Repository Website Link
 
 Set the Repository website by updating the About details for the repository and selecting `Use your Github Pages website`.
 
