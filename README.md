@@ -14,9 +14,7 @@
     <a href="https://github.com/IanTeda/REST-API-Server">
         <img src="docs/images/logo.png" alt="Logo" width="80" height="80">
     </a>
-
     <h3 align="center">Rest API Server</h3>
-
     <p align="center">
         A boilerplate (starte) template for kickstarting a REST API written in Rust
     <br />
