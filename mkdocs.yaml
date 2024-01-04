@@ -1,3 +1,4 @@
+# ./mkdocs.yaml
 site_name: REST API Server
 site_url: https://ianteda.github.io/REST-API-Server
 theme:
