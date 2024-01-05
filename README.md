@@ -76,7 +76,9 @@ Motivation for documenting this:
 
 This server is built with:
 
-* [![Rust][Rust]][Rust-url]
+* [Rus](https://www.rust-lang.org/)
+* [SQLx](https://docs.rs/sqlx/latest/sqlx/)
+* [Actix](https://actix.rs/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,15 +87,13 @@ This server is built with:
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+```sh
+```
 
 ### Installation
 
@@ -175,19 +175,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [@ian_teda](https://twitter.com/ian_teda) - [ian@teda.id.au](mailto:ian@teda.id.au)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/IanTeda/REST-API-Server](https://github.com/IanTeda/REST-API-Server)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-
-
-# REST-API-Server
-
-A Rust base REST API Server
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -223,6 +216,3 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: docs/images/screenshot.png
-
-[Rust]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Rust-url]: https://www.rust-lang.org/
